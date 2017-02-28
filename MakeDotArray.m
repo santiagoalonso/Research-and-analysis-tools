@@ -1,5 +1,5 @@
 function [dot_centers, dd] = MakeDotArray(side,number_dots,dot_diameter,dist)
-%This function gives the centers and diameters of dots. 
+%This function gives the centers and diameters of non-overlapping dots. 
 %Useful to paint cloud of dots for number comparison tasks (e.g. using psychtoolbox)
 %
 % BASE CODE AND IDEA: Elon Gaffin-Cahn (December 2013). 
