@@ -29,14 +29,13 @@ function [ normTraj, normPoints ] = Traj_Norm( trajectory, type, control, method
 %               'jumped' by the algorithm.  
 %               If pullbacks are too large, be aware that shape information
 %               during pullback time is invisible to the space normalizing 
-%               algorithm (tip: use time normalization instead). Space 
-%               normalization uses a progressive code (go Bernie!)
+%               algorithm (tip: use time normalization instead).
 %
 %               For space  normalization, if you have a  trajectory that 
 %               first goes forward (e.g. to screen) and then goes back 
 %               again (e.g. to button box), break the the trajectory in two 
 %               by using the max. distance in the forward direction as
-%               breaking point. Then use this code to normalize both 
+%               breaking point. Then use this code to normalize either or both 
 %               directions.
 %
 %
