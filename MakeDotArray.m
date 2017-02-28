@@ -1,4 +1,7 @@
 function [dot_centers, dd] = MakeDotArray(side,number_dots,dot_diameter,dist)
+%This function gives the centers and diameters of dots. 
+%Useful to paint cloud of dots for number comparison tasks (e.g. using psychtoolbox)
+%
 % BASE CODE AND IDEA: Elon Gaffin-Cahn (December 2013). 
 % ADDED: dot_diameter can be a vector i.e. to paint dots with different 
 %        sizes. Santiago Alonso-Diaz (Aug. 2016) 
@@ -138,9 +141,10 @@ function circle = MakeCircle(diameter,center,bounds)
 
 % For a [bounds x bounds] matrix, pixel2origin(n,m,:) is the (x,y) vector
 % from the origin (0,0) to (n,m). Origin refers to the top left corner of
-% the screen, and flipped Y coordinates as in PTB (also, all coordinates are
-% positive due to meshgrid call) i.e. this is just all the possible
-% coordinates/pixel combinations in the  box defined by bounds.
+% the screen, and flipped Y coordinates as in PTB psychtoolbox 
+%(also, all coordinates are positive due to meshgrid call). 
+%In other words, pixel2origin has all the possible coordinates/pixel 
+%combinations in the  box defined by bounds.
 [pixel2origin(:,:,2), pixel2origin(:,:,1)] = meshgrid(1:bounds(2),1:bounds(1)); 
 
 
