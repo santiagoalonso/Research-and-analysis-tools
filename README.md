@@ -1,6 +1,6 @@
 # Research-and-analysis-tools:
 
-* MakeDotArray: (by Elon Gaffin-Cahn and some add-ons by me): Locates the center of many non-overlapping dots. Useful to draw stimuli for visual number tasks e.g. compare two clouds of dots and say which is numerically larger or compare two discrete ratios.
+* MakeDotArray: (by Elon Gaffin-Cahn and some add-ons by me): Locates the center of many non-overlapping circles. Useful to draw stimuli for visual number tasks e.g. compare two clouds of dots and report which is numerically larger or compare two discrete visual ratios.
 
 * within_sem: Computes means and std. error of mean for within subject designs. Useful to plot error bars because it "washes" away between subject variability.
 
