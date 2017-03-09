@@ -25,7 +25,7 @@ within_sem <-function(data){
     nv[,cond] =  data[,cond] - sa + rep(ga, nsubj)
   }
   avg = apply(data, 2, mean, na.rm = T) 
-  sem = (apply(nv, 2, sd)/sqrt(nsubj))
+  sem = (apply(nv, 2, sd, na.rm = T)/sqrt(nsubj))
   
   out = list(mean = avg, sem = sem)
   out
